@@ -1,31 +1,59 @@
 # Medical Cost Exploratory Data Analysis (EDA)
 Analyzing the Medical Cost dataset to explore factors affecting insurance charges
 
-**Goal:**  
-Explore the "Medical Cost Personal Dataset" to understand variable distributions, relationships with `charges` (medical costs billed), and prepare insights for modeling.
 
 **Dataset:**  
 [Medical Cost Personal Dataset on Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance)
 
-**Notebook Overview:**  
-1. **Load Data & Initial Checks** – inspected columns, data types, summary statistics.  
-2. **Data Cleaning & Transformations** – handled missing values, duplicates and converted categorical variables to numeric.  
-3. **Exploratory Data Analysis (EDA)**  
-   - Univariate analysis: distribution plots for all features.  
-   - Bivariate analysis: how features relate to `charges`.  
-4. **Correlation Analysis** – correlation matrix for all features.  
-5. **Conclusions** – summarized findings.
+---
 
-**Key Insights:**  
-- Major drivers of `charges`: `smoker`, `age`, `bmi`.  
-- `bmi` roughly normal; `charges` is right-skewed.  
-- Strong positive correlation between `smoker` status and `charges`.
+## Project Overview
+
+The goal of this project is to **analyze and prepare the dataset for high-quality insights** by:
+
+- Checking and cleaning the data  
+- Converting categorical features to numeric for analysis  
+- Exploring variable distributions and relationships with `charges`  
+- Identifying correlations and key drivers of medical costs  
+- Preparing the dataset for potential modeling  
+
+---
+## Tasks Performed
+
+### 1. Loaded and inspected the dataset
+Checked the first rows, column names, data types, and summary statistics to understand the structure.
+
+### 2. Checked for missing values and duplicates
+Verified whether any columns contained null values and decided how to handle them.
+
+### 3. Cleaned and transformed data
+- Converted categorical columns (`sex`, `smoker`, `region`) to numeric using label encoding  
+- Standardized formats and ensured data consistency  
+
+### 4. Univariate analysis
+Plotted distributions of numeric and categorical variables to check skewness, outliers, and patterns.
+
+### 5. Bivariate analysis
+Compared features with `charges` to identify relationships using boxplots and scatterplots.
+
+### 6. Correlation analysis
+Calculated pairwise correlations to see which features are strongly related to `charges` and to each other.
 
 
 
+---
+
+## Key Insights
+
+- **Major drivers of charges:** `smoker`, `age`, `bmi`  
+- **Distributions:** `bmi` is roughly normal; `charges` is right-skewed  
+- Correlation analysis helps identify which variables may be most useful in predictive modeling  
+
+---
 
 
+.
 
 **Credits:**  
 - Dataset source: [Kaggle](https://www.kaggle.com/datasets/mirichoi0218/insurance)  
-- Tutorial and guidance: **Data Science with Onur**
+- Guidance: **Data Science with Onur**
